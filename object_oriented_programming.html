@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Tutorial - Version 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Style the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Object-Oriented Programming (OOP)</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+         <!-- Dropdown menu for Training Resources -->
+	<li class="dropdown">
+  	<a href="#" class="dropbtn">Training Resources</a>
+ 	 <div class="dropdown-content">
+    	<a href="example_code_current_topic.html">Examples of Code</a>
+    	<a href="incomplete_code_current_topic.html">Incomplete Coding Samples</a>
+   	<a href="coding_problems_current_topic.html">Coding Problems</a>
+    	<a href="assessment_quizzes_current_topic.html">Assessment Quizzes</a>
+  </div>
+</li>
+        <!-- Add links to other topics here -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Understanding OOP Principles</h2>
+    <p><strong>Object-Oriented Programming (OOP)</strong> is a programming paradigm based on the concept of "objects," which can contain data and code to manipulate that data.</p>
+    <p>Key OOP principles:</p>
+    <ul>
+      <li><strong>Encapsulation:</strong> Encapsulation refers to the bundling of data (attributes) and methods (functions) that operate on that data into a single unit, known as a class.</li>
+      <li><strong>Inheritance:</strong> Inheritance allows a class (subclass) to inherit attributes and methods from another class (superclass), enabling code reuse and creating a hierarchy of classes.</li>
+      <li><strong>Polymorphism:</strong> Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling code flexibility and extensibility.</li>
+    </ul>
+
+    <h2>Implementing Classes and Objects</h2>
+    <p>In OOP, a <strong>class</strong> is a blueprint for creating objects, and an <strong>object</strong> is an instance of a class.</p>
+    <p>Example of defining a class and creating objects:</p>
+    <pre>
+      <code>
+        // Define a class
+        class Person {
+          constructor(name, age) {
+            this.name = name;
+            this.age = age;
+          }
+        
+          greet() {
+            return "Hello, my name is " + this.name + " and I am " + this.age + " years old.";
+          }
+        }
+        
+        // Create objects
+        let person1 = new Person("Alice", 30);
+        let person2 = new Person("Bob", 25);
+        
+        console.log(person1.greet()); // Output: Hello, my name is Alice and I am 30 years old.
+        console.log(person2.greet()); // Output: Hello, my name is Bob and I am 25 years old.
+      </code>
+    </pre>
+
+    <h2>Design Patterns</h2>
+    <p><strong>Design patterns</strong> are reusable solutions to common problems in software design.</p>
+    <p>Examples of design patterns:</p>
+    <ul>
+      <li><strong>Singleton:</strong> Ensures that a class has only one instance and provides a global point of access to that instance.</li>
+      <li><strong>Factory:</strong> Creates objects without specifying the exact class to be created, allowing for decoupling of object creation from the client code.</li>
+      <li><strong>Observer:</strong> Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.</li>
+      <!-- Add more design patterns if needed -->
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Programming Tutorial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

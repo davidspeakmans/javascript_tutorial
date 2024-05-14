@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Tutorial - Version 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Style the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Understanding Basic Programming Concepts</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      	<!-- Dropdown menu for Training Resources -->
+	<li class="dropdown">
+  	<a href="#" class="dropbtn">Training Resources</a>
+ 	 <div class="dropdown-content">
+    	<a href="example_code_current_topic.html">Examples of Code</a>
+    	<a href="incomplete_code_current_topic.html">Incomplete Coding Samples</a>
+   	<a href="coding_problems_current_topic.html">Coding Problems</a>
+    	<a href="assessment_quizzes_current_topic.html">Assessment Quizzes</a>
+         </div>
+      </li>
+        <!-- Add links to other topics here -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Variables, Data Types, and Operators</h2>
+    <p><strong>Variables:</strong> Variables are used to store data values. In most programming languages, variables must be declared before they can be used.</p>
+    <p><strong>Data Types:</strong> Data types define the type of data that can be stored in a variable. Common data types include integers, floating-point numbers, strings, and boolean values.</p>
+    <p><strong>Operators:</strong> Operators are symbols that perform operations on operands. Examples include arithmetic operators (+, -, *, /), comparison operators (>, <, ==, !=), and logical operators (&&, ||, !).</p>
+
+    <h2>Control Structures</h2>
+    <p><strong>If Statement:</strong> The if statement allows you to execute a block of code if a specified condition is true.</p>
+    <p><strong>Else Statement:</strong> The else statement allows you to execute a block of code if the same condition is false.</p>
+    <p><strong>Loops:</strong> Loops are used to execute a block of code multiple times. Common types of loops include for loops, while loops, and do-while loops.</p>
+
+    <h2>Functions and Methods</h2>
+    <p><strong>Functions:</strong> Functions are blocks of reusable code that perform a specific task. They can accept input parameters and return output values.</p>
+    <p><strong>Methods:</strong> Methods are functions that are associated with objects. They can modify the object's state or perform operations related to the object.</p>
+
+    <h2>Data Structures</h2>
+    <p><strong>Arrays:</strong> Arrays are used to store multiple values in a single variable. The elements of an array can be accessed using an index.</p>
+    <p><strong>Lists:</strong> Lists are similar to arrays but are more flexible in size and content. They allow for dynamic resizing and support various operations such as adding, removing, and accessing elements.</p>
+    <p><strong>Dictionaries:</strong> Dictionaries, also known as associative arrays or maps, are used to store key-value pairs. Each value is associated with a unique key, allowing for efficient lookup and retrieval.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Programming Tutorial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

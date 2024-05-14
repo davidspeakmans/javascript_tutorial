@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Tutorial - Version 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Style the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}  
+    .dropdown:hover .dropdown-content {display: block;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Command Line Proficiency</h1>
+     <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+	<!-- Dropdown menu for Training Resources -->
+	<li class="dropdown">
+  	<a href="#" class="dropbtn">Training Resources</a>
+ 	 <div class="dropdown-content">
+    	<a href="example_code_current_topic.html">Examples of Code</a>
+    	<a href="incomplete_code_current_topic.html">Incomplete Coding Samples</a>
+   	<a href="coding_problems_current_topic.html">Coding Problems</a>
+    	<a href="assessment_quizzes_current_topic.html">Assessment Quizzes</a>
+  </div>
+</li>
+        <!-- Add links to other topics here -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Navigating the File System</h2>
+    <p>The command line allows you to navigate through directories and work with files on your computer.</p>
+    <p>Common navigation commands:</p>
+    <ul>
+      <li><code>cd</code>: Change directory</li>
+      <li><code>pwd</code>: Print working directory</li>
+      <li><code>ls</code>: List directory contents</li>
+      <li><code>mkdir</code>: Make directory</li>
+      <li><code>rmdir</code>: Remove directory</li>
+    </ul>
+
+    <h2>Basic Command Line Operations</h2>
+    <p>You can perform various operations on files and directories using command line commands.</p>
+    <p>Common operations:</p>
+    <ul>
+      <li><code>cp</code>: Copy files or directories</li>
+      <li><code>mv</code>: Move or rename files or directories</li>
+      <li><code>rm</code>: Remove files or directories</li>
+    </ul>
+
+    <h2>Command-Line Tools</h2>
+    <p>In addition to basic commands, there are many powerful command-line tools available for text processing, file manipulation, and more.</p>
+    <p>Examples of command-line tools:</p>
+    <ul>
+      <li><strong>grep:</strong> Search for patterns in files</li>
+      <li><strong>sed:</strong> Stream editor for filtering and transforming text</li>
+      <li><strong>awk:</strong> Text processing tool for pattern scanning and processing</li>
+    </ul>
+    <p>These tools can be combined with command line commands to perform complex tasks efficiently.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Programming Tutorial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

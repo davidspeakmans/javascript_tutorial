@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Tutorial - Version 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Style the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Algorithms and Data Structures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+	<!-- Dropdown menu for Training Resources -->
+	<li class="dropdown">
+  	<a href="#" class="dropbtn">Training Resources</a>
+ 	 <div class="dropdown-content">
+    	<a href="example_code_current_topic.html">Examples of Code</a>
+    	<a href="incomplete_code_current_topic.html">Incomplete Coding Samples</a>
+   	<a href="coding_problems_current_topic.html">Coding Problems</a>
+    	<a href="assessment_quizzes_current_topic.html">Assessment Quizzes</a>
+  </div>
+</li>
+        <!-- Add links to other topics here -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Sorting Algorithms</h2>
+    <p><strong>Sorting algorithms</strong> are used to arrange elements in a particular order.</p>
+    <p>Common sorting algorithms:</p>
+    <ul>
+      <li><strong>Bubble Sort:</strong> Compare adjacent elements and swap them if they are in the wrong order.</li>
+      <li><strong>Merge Sort:</strong> Divide the array into halves, recursively sort each half, and then merge them back together.</li>
+      <li><strong>Quick Sort:</strong> Choose a pivot element and partition the array into two sub-arrays, one containing elements less than the pivot and the other containing elements greater than the pivot. Recursively apply quicksort to the sub-arrays.</li>
+      <!-- Add more sorting algorithms if needed -->
+    </ul>
+
+    <h2>Searching Algorithms</h2>
+    <p><strong>Searching algorithms</strong> are used to find a particular element in a collection of elements.</p>
+    <p>Common searching algorithms:</p>
+    <ul>
+      <li><strong>Binary Search:</strong> Search a sorted array by repeatedly dividing the search interval in half.</li>
+      <!-- Add more searching algorithms if needed -->
+    </ul>
+
+    <h2>Basic Data Structures</h2>
+    <p><strong>Data structures</strong> are used to store and organize data in a computer.</p>
+    <p>Common data structures:</p>
+    <ul>
+      <li><strong>Stacks:</strong> A data structure that follows the Last In, First Out (LIFO) principle.</li>
+      <li><strong>Queues:</strong> A data structure that follows the First In, First Out (FIFO) principle.</li>
+      <li><strong>Linked Lists:</strong> A data structure consisting of a sequence of elements where each element points to the next element in the sequence.</li>
+      <!-- Add more data structures if needed -->
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Programming Tutorial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
